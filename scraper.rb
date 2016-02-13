@@ -44,7 +44,6 @@ def scrape_mp(url)
     term: 2012,
   }
   data[:gender] = gender_from(data[:name])
-  puts data
   ScraperWiki.save_sqlite([:name, :term], data)
 end
 
