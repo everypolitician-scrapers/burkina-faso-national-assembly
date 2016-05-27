@@ -48,7 +48,7 @@ def scrape_mp(url)
     email: box.css('a[href*="mailto"]/@href').text.sub('mailto:',''),
     image: box.css('img[src*="photos"]/@src').text,
     term: 7,
-    source: url,
+    source: url.to_s,
   }
   data[:gender] = gender_from(data[:name])
   ScraperWiki.save_sqlite([:id, :term], data)
