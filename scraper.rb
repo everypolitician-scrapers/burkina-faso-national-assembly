@@ -30,7 +30,9 @@ end
 def gender_from(name)
   return 'male' if name.start_with? 'M.'
   return 'female' if name.start_with? 'Mme'
-  raise "Unknown gender for #{name}"
+  return '' if name.start_with? 'Dr'
+  warn "Unknown gender for #{name}"
+  return ''
 end
 
 def scrape_mp(url)
