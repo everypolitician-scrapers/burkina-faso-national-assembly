@@ -6,8 +6,9 @@ require 'scraperwiki'
 require 'scraped'
 require 'pry'
 
-require 'open-uri/cached'
-OpenURI::Cache.cache_path = '.cache'
+# require 'open-uri/cached'
+# OpenURI::Cache.cache_path = '.cache'
+require 'scraped_page_archive/open-uri'
 
 def noko_for(url)
   # The server returns a 500 error for a successful page!
@@ -50,6 +51,7 @@ def scrape_mp(url)
     source:   url.to_s,
   }
   data[:gender] = gender_from(data[:name])
+  # puts data
   ScraperWiki.save_sqlite(%i(id term), data)
 end
 
