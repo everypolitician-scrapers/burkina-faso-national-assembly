@@ -2,10 +2,8 @@
 # encoding: utf-8
 # frozen_string_literal: true
 
-require 'nokogiri'
-require 'open-uri'
-require 'csv'
 require 'scraperwiki'
+require 'scraped'
 require 'pry'
 
 require 'open-uri/cached'
@@ -13,7 +11,6 @@ OpenURI::Cache.cache_path = '.cache'
 
 def noko_for(url)
   # The server returns a 500 error for a successful page!
-
   Nokogiri::HTML(open(url).read)
 rescue => e
   text = e.io.read
@@ -43,7 +40,7 @@ def scrape_mp(url)
 
   data = {
     id:       url.to_s[/id=(\d+)/, 1],
-    name:     box.css('span.link1').xpath('./text()[1]').text.gsub(/[[:space:]]+/, ' ').strip,
+    name:     box.css('span.link1').xpath('./text()[1]').text.gsub(/[[:space:]]+/, ' ').tidy,
     party:    party,
     party_id: party_id,
     area:     box.xpath('.//td[contains(.,"Liste provinciale")]/following-sibling::td[1]').text,
