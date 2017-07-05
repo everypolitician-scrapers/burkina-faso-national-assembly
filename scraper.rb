@@ -52,7 +52,7 @@ def scrape_mp(url)
   }
   data[:gender] = gender_from(data[:name])
   # puts data
-  ScraperWiki.save_sqlite(%i(id term), data)
+  ScraperWiki.save_sqlite(%i[id term], data)
 end
 
 ScraperWiki.sqliteexecute('DROP TABLE data') rescue nil
