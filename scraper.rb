@@ -56,4 +56,4 @@ def scrape_mp(url)
 end
 
 ScraperWiki.sqliteexecute('DROP TABLE data') rescue nil
-scrape_list('http://www.assembleenationale.bf/Deputes-de-la-VIIeme-legislature')
+scrape_list('https://www.assembleenationale.bf/Deputes-de-la-VIIeme-legislature')
