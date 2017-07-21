@@ -18,7 +18,7 @@ response:
     message: OK
   headers:
     Date:
-    - Thu, 20 Jul 2017 15:57:55 GMT
+    - Fri, 21 Jul 2017 00:21:02 GMT
     Server:
     - Apache
     Vary:
@@ -28,7 +28,7 @@ response:
     X-Spip-Cache:
     - '86400'
     Last-Modified:
-    - Thu, 20 Jul 2017 15:57:55 GMT
+    - Fri, 21 Jul 2017 00:21:02 GMT
     X-Powered-By:
     - PleskLin
     Content-Length:
@@ -38,4 +38,4 @@ response:
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Thu, 20 Jul 2017 15:58:03 GMT
+recorded_at: Fri, 21 Jul 2017 00:21:10 GMT
