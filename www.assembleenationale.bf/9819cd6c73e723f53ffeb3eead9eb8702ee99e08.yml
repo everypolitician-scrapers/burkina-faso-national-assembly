@@ -20,7 +20,7 @@ response:
     Server:
     - nginx
     Date:
-    - Fri, 16 Mar 2018 23:46:14 GMT
+    - Sun, 18 Mar 2018 10:54:13 GMT
     Content-Type:
     - text/html; charset=utf-8
     Content-Length:
@@ -37,8 +37,8 @@ response:
     X-Spip-Cache:
     - '86400'
     Last-Modified:
-    - Fri, 16 Mar 2018 23:46:14 GMT
+    - Sun, 18 Mar 2018 10:54:12 GMT
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Fri, 16 Mar 2018 23:46:14 GMT
+recorded_at: Sun, 18 Mar 2018 10:54:07 GMT
