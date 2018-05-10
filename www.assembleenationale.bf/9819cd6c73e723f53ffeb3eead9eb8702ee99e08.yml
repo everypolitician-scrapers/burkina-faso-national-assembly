@@ -20,11 +20,11 @@ response:
     Server:
     - nginx
     Date:
-    - Wed, 09 May 2018 22:50:29 GMT
+    - Thu, 10 May 2018 07:59:03 GMT
     Content-Type:
     - text/html; charset=utf-8
     Content-Length:
-    - '7993'
+    - '7915'
     Connection:
     - keep-alive
     X-Powered-By:
@@ -37,8 +37,8 @@ response:
     X-Spip-Cache:
     - '86400'
     Last-Modified:
-    - Wed, 09 May 2018 22:50:28 GMT
+    - Thu, 10 May 2018 07:59:02 GMT
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Wed, 09 May 2018 22:50:25 GMT
+recorded_at: Thu, 10 May 2018 07:58:58 GMT
